@@ -1,12 +1,12 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
-#include <Jpeg.hpp>
+//include <Jpeg.hpp>
 
 #pragma hdrstop
 
 #include "PSRYDisplay2021.h"
-#include "ThrottleUnit.h"
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -144,66 +144,6 @@ int LaKrDiaYOrigin = 20;
 int NaCfDiaXOrigin = 0;
 int NaCfDiaYOrigin = 20;
 
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::YardPortClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = true;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = false;
-	ImageHydeYardPort->Left = -1280;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::HydeClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = true;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = false;
-	ImageHydeYardPort->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::LathamDellClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = true;
-	ImageNassauCliff->Visible = false;
-	ImageLathamKrulish->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::ShoreKrulishClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = true;
-	ImageNassauCliff->Visible = false;
-	ImageLathamKrulish->Left = -1280;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::NassauBankClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = true;
-	ImageNassauCliff->Left = 0;
-	Train->SetFocus();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm2::CliffClick(TObject *Sender)
-{
-	ImageHydeYardPort->Visible = false;
-	ImageLathamKrulish->Visible = false;
-	ImageNassauCliff->Visible = true;
-	ImageNassauCliff->Left = -1280;
-	Train->SetFocus();
-}
 //---------------------------------------------------------------------------
 
 void __fastcall TForm2::ClientSocketRead(TObject *Sender,
@@ -487,4 +427,64 @@ void TForm2::WriteServer(String Type, String ImageName, int Col, int Row, String
 
 
 
+
+void __fastcall TForm2::btnHydeClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = true;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = false;
+	ImageHydeYardPort->Left = 0;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnYdPtClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = true;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = false;
+	ImageHydeYardPort->Left = -1280;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnLaDlClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = true;
+	ImageNassauCliff->Visible = false;
+	ImageLathamKrulish->Left = 0;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnShKrClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = true;
+	ImageNassauCliff->Visible = false;
+	ImageLathamKrulish->Left = -1280;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnNaBkClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = true;
+	ImageNassauCliff->Left = 0;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::btnCfClick(TObject *Sender)
+{
+	ImageHydeYardPort->Visible = false;
+	ImageLathamKrulish->Visible = false;
+	ImageNassauCliff->Visible = true;
+	ImageNassauCliff->Left = -1280;
+	Train->SetFocus();
+}
+//---------------------------------------------------------------------------
 

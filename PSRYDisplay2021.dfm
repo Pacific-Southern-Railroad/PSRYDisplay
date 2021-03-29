@@ -4,7 +4,7 @@ object Form2: TForm2
   HorzScrollBar.Visible = False
   VertScrollBar.Visible = False
   Caption = 'PSRY Remote Display    8/15/20'
-  ClientHeight = 1021
+  ClientHeight = 845
   ClientWidth = 1264
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,12 +20,11 @@ object Form2: TForm2
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
-    Top = 946
+    Top = 770
     Width = 1264
     Height = 75
     Align = alBottom
     TabOrder = 0
-    ExplicitTop = 770
     object Label6: TLabel
       Left = 40
       Top = 24
@@ -33,59 +32,60 @@ object Form2: TForm2
       Height = 13
       Caption = 'IP Address'
     end
-    object Hyde: TButton
-      Left = 312
-      Top = 24
+    object btnHyde: TSpeedButton
+      Left = 299
+      Top = 13
       Width = 89
-      Height = 25
+      Height = 33
+      GroupIndex = 5
+      Down = True
       Caption = 'Hyde'
-      TabOrder = 0
-      OnClick = HydeClick
+      OnClick = btnHydeClick
     end
-    object YardPort: TButton
-      Left = 432
-      Top = 24
+    object btnYdPt: TSpeedButton
+      Left = 424
+      Top = 13
       Width = 89
-      Height = 25
+      Height = 33
+      GroupIndex = 5
       Caption = 'Yard/Port'
-      TabOrder = 1
-      OnClick = YardPortClick
+      OnClick = btnYdPtClick
     end
-    object LathamDell: TButton
+    object btnLaDl: TSpeedButton
       Left = 544
-      Top = 24
+      Top = 13
       Width = 91
-      Height = 25
+      Height = 33
+      GroupIndex = 5
       Caption = 'Latham/Dell'
-      TabOrder = 2
-      OnClick = LathamDellClick
+      OnClick = btnLaDlClick
     end
-    object ShoreKrulish: TButton
-      Left = 664
-      Top = 24
+    object btnShKr: TSpeedButton
+      Left = 672
+      Top = 13
       Width = 91
-      Height = 25
+      Height = 33
+      GroupIndex = 5
       Caption = 'Shore/Krulish'
-      TabOrder = 3
-      OnClick = ShoreKrulishClick
+      OnClick = btnShKrClick
     end
-    object NassauBank: TButton
-      Left = 784
-      Top = 24
+    object btnNaBk: TSpeedButton
+      Left = 792
+      Top = 14
       Width = 89
-      Height = 25
+      Height = 33
+      GroupIndex = 5
       Caption = 'Nassau/Bank'
-      TabOrder = 4
-      OnClick = NassauBankClick
+      OnClick = btnNaBkClick
     end
-    object Cliff: TButton
-      Left = 904
-      Top = 24
+    object btnCf: TSpeedButton
+      Left = 912
+      Top = 14
       Width = 91
-      Height = 25
+      Height = 33
+      GroupIndex = 5
       Caption = 'Cliff'
-      TabOrder = 5
-      OnClick = CliffClick
+      OnClick = btnCfClick
     end
     object IPAddress: TMemo
       Left = 104
@@ -100,17 +100,16 @@ object Form2: TForm2
       Lines.Strings = (
         '98.110.124.243')
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 0
     end
   end
   object PanelX: TPanel
     Left = 0
     Top = 106
     Width = 1264
-    Height = 840
+    Height = 664
     Align = alClient
     TabOrder = 1
-    ExplicitHeight = 664
     object ImageHydeYardPort: TImage
       Left = 0
       Top = 0

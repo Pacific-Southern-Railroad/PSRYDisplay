@@ -13,6 +13,7 @@
 #include <Graphics.hpp>
 #include <System.ImageList.hpp>
 #include <System.Win.ScktComp.hpp>
+#include <Vcl.Buttons.hpp>
 //---------------------------------------------------------------------------
 const int HtWd = 16;
 
@@ -20,12 +21,6 @@ class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
    TPanel *Panel1;
-   TButton *Hyde;
-   TButton *YardPort;
-   TButton *LathamDell;
-   TButton *ShoreKrulish;
-   TButton *NassauBank;
-   TButton *Cliff;
    TImage *ImageHydeYardPort;
    TImage *ImageLathamKrulish;
    TImage *ImageNassauCliff;
@@ -49,13 +44,13 @@ __published:	// IDE-managed Components
 	TEdit *Disconnects;
 	TLabel *Label5;
 	TLabel *Label6;
+	TSpeedButton *btnHyde;
+	TSpeedButton *btnYdPt;
+	TSpeedButton *btnLaDl;
+	TSpeedButton *btnShKr;
+	TSpeedButton *btnNaBk;
+	TSpeedButton *btnCf;
    void __fastcall FormActivate(TObject *Sender);
-   void __fastcall YardPortClick(TObject *Sender);
-   void __fastcall HydeClick(TObject *Sender);
-   void __fastcall LathamDellClick(TObject *Sender);
-   void __fastcall ShoreKrulishClick(TObject *Sender);
-   void __fastcall NassauBankClick(TObject *Sender);
-   void __fastcall CliffClick(TObject *Sender);
    void __fastcall ClientSocketRead(TObject *Sender,
           TCustomWinSocket *Socket);
    void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
@@ -71,6 +66,12 @@ __published:	// IDE-managed Components
    void __fastcall ImageNassauCliffMouseDown(TObject *Sender,
           TMouseButton Button, TShiftState Shift, int X, int Y);
 	void __fastcall WatchdogTimer(TObject *Sender);
+	void __fastcall btnHydeClick(TObject *Sender);
+	void __fastcall btnYdPtClick(TObject *Sender);
+	void __fastcall btnLaDlClick(TObject *Sender);
+	void __fastcall btnShKrClick(TObject *Sender);
+	void __fastcall btnNaBkClick(TObject *Sender);
+	void __fastcall btnCfClick(TObject *Sender);
 
 private:	// User declarations
 
